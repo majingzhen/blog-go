@@ -1,0 +1,15 @@
+app:
+  port: 8080
+  runMode: release
+  logFile: blog-go.log
+  appVer: dev1.0
+  appVerDate: 2023-06-06
+
+mysql:
+  host: 127.0.0.1
+  port: 3306
+  database: bolg_go
+  username: root
+  password: root
+  tablePrefix: "p"
+  logMode: true
