@@ -13,5 +13,8 @@ func (routers *Routers) InitRouter() *gin.Engine {
 	// 使用自定义日志配置
 	r.Use(middleware.LogMiddleware())
 	r.Use(gin.Recovery())
+
+	// 授权
+	r.Use(middleware.JWTAuthMiddleware())
 	return r
 }
