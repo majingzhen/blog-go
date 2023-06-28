@@ -11,5 +11,5 @@ mysql:
   database: bolg_go
   username: root
   password: root
-  tablePrefix: "p"
+  tablePrefix: "p_"
   logMode: true

@@ -32,7 +32,7 @@ func InitDataBase() {
 	if viper.GetBool("mysql.logMode") {
 		gcf.Logger = logger.Default.LogMode(logger.Info) // logger.info 输出 sql
 	}
-	db, _ := gorm.Open(mysql.Open(dsn), gcf)
+	db, _ = gorm.Open(mysql.Open(dsn), gcf)
 	sqlDb, _ := db.DB()
 	sqlDb.SetMaxIdleConns(1000)
 	sqlDb.SetMaxOpenConns(5000)
